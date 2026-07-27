@@ -56,8 +56,10 @@ def contact():
             send_email(name, email, message)
             flash("Your message has been sent successfully", "success")
 
-        except Exception:
-            flash("Something went wrong. Please try again later.", "error")
+        except Exception as e:
+                # flash("Something went wrong. Please try again later.", "error")
+                print(e)
+                flash(f"Error: {e}", "error")
         return redirect(url_for("contact"))
     return render_template('contact.html',form=form)
 

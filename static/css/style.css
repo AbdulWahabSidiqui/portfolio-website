@@ -123,6 +123,13 @@ body{
     margin-top:0;
     padding-top:120px;
 }
+@media(max-width:768px){
+
+.about{
+    padding:80px 25px 140px;
+}
+
+}
 
 .about h2{
     font-size:2.2rem;
@@ -223,6 +230,13 @@ body{
 .skill:last-child{
     border-right:none;
 }
+@media(max-width:768px){
+
+.about{
+    padding:80px 25px 140px;
+}
+
+}
 .skill-icon{
     width:64px;
     transition:transform .25s ease;
@@ -249,11 +263,12 @@ body{
 
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
 
     .hero p {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        padding:0 15px;
     }
 
     .hero-avatar {
@@ -326,7 +341,7 @@ body{
     margin-bottom:40px;
 }
 .contact-title{
-    font-size:3.5rem;
+    font-size:2.2rem;
     font-weight:800;
     color:var(--text);
 
@@ -336,7 +351,7 @@ body{
 }
 
 .contact-subtitle{
-    font-size:1.45rem;
+    font-size:1.1rem;
     color:var(--text-light);
 
     max-width:700px;
@@ -420,7 +435,8 @@ body{
 
     transform: translate(-50%, -50%);
 
-    width: 360px;
+    width: 90%;
+    max-width: 360px;
 
     background: white;
 
@@ -451,7 +467,7 @@ body{
 
     border-radius:22px;
 
-    padding:55px 70px;
+    padding:40px 25px;
 
     display:flex;
     justify-content:space-between;
@@ -580,7 +596,7 @@ body{
 
     justify-content:center;
 
-    gap:30px;
+    gap:20px;
 
     margin-bottom:45px;
 
@@ -679,4 +695,15 @@ body{
         opacity:1;
         transform:translateY(0) scale(1);
     }
+}
+@media (max-width:768px){
+
+.text-end{
+    width:100%;
+    margin-top:20px;
+
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
 }
