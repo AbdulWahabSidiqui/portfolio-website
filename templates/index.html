@@ -3,184 +3,254 @@
 {% block content %}
 <div class="container-xl">
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-        <div class="col-md-3 mb-2 mb-md-0"><a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-          <img src="{{ url_for('static', filename='assets/logo.svg') }}"
-             alt="Vertex Code Logo"
-             height="60">
+        <div class="col-md-3 mb-2 mb-md-0">
+            <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                <img src="{{ url_for('static', filename='assets/logo.svg') }}"
+                     alt="Vertex Code Logo"
+                     height="60">
+            </a>
+        </div>
 
-        </a></div>
-
-        <div class="col-md-3 text-end">
-        <a href="{{ url_for('static', filename='resume/resume.pdf') }}"
-           class="btn-primary-custom me-3"
-           target="_blank"
-           download>
-            Download Resume
-        </a>
-         <a href="{{ url_for('contact') }}" class="btn-outline">Say Hello</a>
+        <div class="col-md-9 text-end">
+            <a href="#projects" class="nav-projects-link">Projects</a>
+            <a href="{{ url_for('static', filename='resume/resume.pdf') }}"
+               class="btn-primary-custom me-3"
+               target="_blank"
+               download>
+                Download Resume
+            </a>
+            <a href="{{ url_for('contact') }}" class="btn-outline">Say Hello</a>
         </div>
     </header>
 </div>
+
 <section class="hero">
-    <h1 class="hero-title">Python Developer &
-Aspiring Data Scientist</h1>
+    <h1 class="hero-title">Python Developer &amp;<br>Aspiring Data Scientist</h1>
     <p>I build desktop applications, automation tools, and continuously expand my skills in data analysis and machine learning through hands-on projects.</p>
-    <img class="hero-avatar" src="{{ url_for('static', filename='assets/avatar.png') }}">
-    <img class="hero-illustration" src="{{ url_for('static', filename='assets/illustration.png') }}">
-
+    <img class="hero-avatar"
+         src="{{ url_for('static', filename='assets/avatar.png') }}"
+         alt="Illustrated avatar of Abdul Wahab">
+    <img class="hero-illustration"
+         src="{{ url_for('static', filename='assets/illustration.png') }}"
+         alt="">
 </section>
-    <section class="about">
-        <h2>Hello, I'm Abdul Wahab. Nice to meet you.</h2>
-        <p>
-    I'm a Python developer passionate about building desktop applications,
-    automation tools, and practical software solutions. I'm currently
-    expanding my expertise in data analysis and machine learning through
-    real-world projects and continuous learning.
-</p>
 
-    </section>
+<section class="about">
+    <h2>Hello, I'm Abdul Wahab. Nice to meet you.</h2>
+    <p>
+        I'm a Python developer passionate about building desktop applications,
+        automation tools, and practical software solutions. I'm currently
+        expanding my expertise in data analysis and machine learning through
+        real-world projects and continuous learning.
+    </p>
+</section>
 
 <section class="skills">
     <div class="container-xl">
         <div class="skill-wrapper">
-        <div class="skill">
-            <img src="{{ url_for('static', filename='assets/python.png') }}" class="skill-icon">
-        <h3 class="skill-title">Python Developer</h3>
-        <p>I enjoy creating practical desktop applications,
-automation scripts, and clean Python solutions
-focused on usability and performance.
-        </p>
-    <h4 class="section-title">
-        I enjoy building
-    </h4>
-<ul>
-        <li>Desktop Apps</li>
-        <li>Automation Tools</li>
-        <li>REST APIs</li>
-        <li>Python Utilities</li>
+            <div class="skill">
+                <img src="{{ url_for('static', filename='assets/python.png') }}" class="skill-icon" alt="">
+                <h3 class="skill-title">Python Developer</h3>
+                <p>I enjoy creating practical desktop applications, automation scripts, and clean Python solutions focused on usability and performance.</p>
+                <h4 class="section-title">I enjoy building</h4>
+                <ul>
+                    <li>Desktop Apps</li>
+                    <li>Automation Tools</li>
+                    <li>REST APIs</li>
+                    <li>Python Utilities</li>
+                </ul>
+                <h4 class="section-title">Technologies</h4>
+                <ul>
+                    <li>Python</li>
+                    <li>Tkinter</li>
+                    <li>Flask</li>
+                    <li>SQLite</li>
+                    <li>Git</li>
+                </ul>
+            </div>
 
-    </ul>
-    <h4 class="section-title">
-        Technologies
-    </h4>
-        <ul>
-        <li>Python</li>
-        <li>Tkinter</li>
-        <li>Flask</li>
-        <li>SQLite</li>
-        <li>Git</li>
-    </ul>
+            <div class="skill">
+                <img src="{{ url_for('static', filename='assets/analysist.png') }}" class="skill-icon" alt="">
+                <h3 class="skill-title">Data Analyst</h3>
+                <p>I transform raw data into meaningful insights using Python and modern data analysis libraries.</p>
+                <h4 class="section-title">Specialties</h4>
+                <ul>
+                    <li>Pandas</li>
+                    <li>NumPy</li>
+                    <li>Matplotlib</li>
+                    <li>Seaborn</li>
+                    <li>Data Cleaning</li>
+                    <li>Exploratory Analysis</li>
+                    <li>Data Visualization</li>
+                </ul>
+            </div>
+
+            <div class="skill">
+                <img src="{{ url_for('static', filename='assets/learning.png') }}" class="skill-icon" alt="">
+                <h3>Continuous Learner</h3>
+                <p>I believe learning never stops. I'm constantly improving through courses, portfolio projects, and practical experience.</p>
+                <h4 class="section-title">Currently Learning</h4>
+                <ul>
+                    <li>Machine Learning</li>
+                    <li>Scikit-learn</li>
+                    <li>Statistics</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+        </div>
     </div>
-
-    <div class="skill">
-            <img src="{{ url_for('static', filename='assets/analysist.png') }}" class="skill-icon">
-
-        <h3 class="skill-title">Data Analyst</h3>
-        <p>I transform raw data into meaningful insights
-using Python and modern data analysis libraries.
-</p>
-    <h4 class="section-title">
-        Specialties
-    </h4>
-
-    <ul>
-        <li>Pandas</li>
-        <li>NumPy</li>
-        <li>Matplotlib</li>
-        <li>Plotly</li>
-        <li>Data Cleaning</li>
-        <li>Visualization</li>
-    </ul>
-
-    </div>
-
-    <div class="skill">
-            <img src="{{ url_for('static', filename='assets/learning.png') }}" class="skill-icon">
-
-        <h3>Continuous Learner</h3>
-        <p>I believe learning never stops.
-I'm constantly improving through courses,
-portfolio projects and real-world practice.
-        </p>
-    <h4 class="section-title">
-            Learning
-    </h4>
-   <ul>
-        <li>Machine Learning</li>
-        <li>Scikit-Learn </li>
-        <li>Statistics</li>
-        <li>SQL</li>
-    </ul>
-    </div>
-
-
-    </div>
-
-    </div>
-
-
 </section>
+
+<section class="projects-section" id="projects">
+    <div class="container-xl">
+        <div class="projects-heading">
+            <span class="projects-eyebrow">A selection of my work</span>
+            <h2>Featured Projects</h2>
+            <p>Practical projects where I use Python and data analysis to explore problems, uncover patterns, and communicate useful findings.</p>
+        </div>
+
+        <div class="projects-grid">
+            <article class="project-card">
+                <a class="project-image-link"
+                   href="https://github.com/AbdulWahabSidiqui/data-analysis-projects/tree/main/Retail%20Transactions"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="View Retail Sales and Profitability Analysis on GitHub">
+                    <img class="project-image"
+                         src="https://raw.githubusercontent.com/AbdulWahabSidiqui/data-analysis-projects/main/Retail%20Transactions/images/discount_vs_profit_by_category.png"
+                         alt="Chart comparing discount impact on profit across retail categories"
+                         loading="lazy">
+                    <span class="project-image-label">01 / BUSINESS ANALYSIS</span>
+                </a>
+                <div class="project-content">
+                    <div class="project-meta">PYTHON · PANDAS · SEABORN</div>
+                    <h3>Retail Sales &amp; Profitability Analysis</h3>
+                    <p>Explored 5,000 retail transactions to identify revenue and profit drivers, evaluate discount effectiveness, and assess sales-channel performance.</p>
+                    <div class="project-tags">
+                        <span>Exploratory Data Analysis</span>
+                        <span>Business Insights</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/AbdulWahabSidiqui/data-analysis-projects/tree/main/Retail%20Transactions"
+                           target="_blank" rel="noopener noreferrer">
+                            View Project <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                        <a href="https://github.com/AbdulWahabSidiqui/data-analysis-projects/blob/main/Retail%20Transactions/retail_analysis.ipynb"
+                           target="_blank" rel="noopener noreferrer" class="project-secondary-link">
+                            Notebook
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <a class="project-image-link"
+                   href="https://github.com/AbdulWahabSidiqui/data-analysis-projects/tree/main/Customer%20Churn%20Exploration"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="View Customer Churn Exploration on GitHub">
+                    <img class="project-image"
+                         src="https://raw.githubusercontent.com/AbdulWahabSidiqui/data-analysis-projects/main/Customer%20Churn%20Exploration/images/rate_over_contract_type.png"
+                         alt="Telecom customer churn rate by contract type"
+                         loading="lazy">
+                    <span class="project-image-label">02 / CUSTOMER ANALYTICS</span>
+                </a>
+                <div class="project-content">
+                    <div class="project-meta">PYTHON · PANDAS · MATPLOTLIB</div>
+                    <h3>Customer Churn Exploration</h3>
+                    <p>Analyzed approximately 7,000 telecom customers to investigate churn patterns, compare contract and tenure groups, and identify retention opportunities.</p>
+                    <div class="project-tags">
+                        <span>Churn Analysis</span>
+                        <span>Customer Retention</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/AbdulWahabSidiqui/data-analysis-projects/tree/main/Customer%20Churn%20Exploration"
+                           target="_blank" rel="noopener noreferrer">
+                            View Project <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                        <a href="https://github.com/AbdulWahabSidiqui/data-analysis-projects/blob/main/Customer%20Churn%20Exploration/ecommerce_churn_analysis.ipynb"
+                           target="_blank" rel="noopener noreferrer" class="project-secondary-link">
+                            Notebook
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <a class="project-image-link"
+                   href="https://github.com/AbdulWahabSidiqui/data-analysis-projects/tree/main/Spotify%20Listening%20Analysis"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="View Spotify Listening Analysis on GitHub">
+                    <img class="project-image"
+                         src="https://raw.githubusercontent.com/AbdulWahabSidiqui/data-analysis-projects/main/Spotify%20Listening%20Analysis/images/listening_activity.png"
+                         alt="Heatmap of personal Spotify listening activity by hour and weekday"
+                         loading="lazy">
+                    <span class="project-image-label">03 / PERSONAL DATA STORY</span>
+                </a>
+                <div class="project-content">
+                    <div class="project-meta">PYTHON · PANDAS · JSON</div>
+                    <h3>Spotify Listening Analysis</h3>
+                    <p>Turned two years of personal Spotify history into a data story about listening habits, music discovery, repeat behaviour, and changing taste.</p>
+                    <div class="project-tags">
+                        <span>Data Storytelling</span>
+                        <span>Personal Analytics</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/AbdulWahabSidiqui/data-analysis-projects/tree/main/Spotify%20Listening%20Analysis"
+                           target="_blank" rel="noopener noreferrer">
+                            View Project <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                        <a href="https://github.com/AbdulWahabSidiqui/data-analysis-projects/blob/main/Spotify%20Listening%20Analysis/spotify_analysis.ipynb"
+                           target="_blank" rel="noopener noreferrer" class="project-secondary-link">
+                            Notebook
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="projects-footer">
+            <a href="https://github.com/AbdulWahabSidiqui/data-analysis-projects"
+               target="_blank" rel="noopener noreferrer" class="all-projects-link">
+                Explore all projects on GitHub <i class="bi bi-arrow-up-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
 <section class="cta-section">
-
     <div class="cta-card">
-
         <div class="cta-content">
-
             <h2>Interested in collaborating?</h2>
-
             <p>
                 Whether you have a data analysis project, a Python automation idea,
                 or an internship opportunity, I'd love to hear from you.
             </p>
-
         </div>
-
         <a href="{{ url_for('contact') }}" class="cta-btn">
             <i class="bi bi-chat-dots"></i>
             Start a Conversation
         </a>
-
     </div>
-
 </section>
+
 <div class="footer-space"></div>
 
 <footer class="footer">
-
-    <!-- Logo -->
     <img src="{{ url_for('static', filename='assets/logo.svg') }}"
          alt="Vertex Code Logo"
          class="footer-logo">
 
-    <!-- Quote -->
     <p class="footer-tagline">
         Building practical software, one project at a time.
     </p>
 
-    <!-- Social Icons -->
     <div class="footer-social">
-
-        <a href="https://github.com/AbdulWahabSidiqui"><i class="bi bi-github"></i></a>
-
-        <a href="https://www.linkedin.com/in/abdul-wahab-497056425/"><i class="bi bi-linkedin"></i></a>
-
-        <a href="{{ url_for('contact') }}"><i class="bi bi-envelope"></i></a>
-
+        <a href="https://github.com/AbdulWahabSidiqui" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/abdul-wahab-497056425/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="{{ url_for('contact') }}" aria-label="Email"><i class="bi bi-envelope"></i></a>
     </div>
 
-    <!-- Copyright -->
     <p class="footer-copy">
-        © 2026 Abdul Wahab. Designed & built with Flask and Bootstrap.
+        © 2026 Abdul Wahab. Designed &amp; built with Flask and Bootstrap.
     </p>
-
 </footer>
-
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
 {% endblock %}
-
-
