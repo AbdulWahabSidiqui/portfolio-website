@@ -707,3 +707,159 @@ body{
 }
 
 }
+
+/* ==============================
+   FEATURED PROJECTS
+================================= */
+
+.featured-projects {
+    background: linear-gradient(
+        to bottom,
+        #2DD4BF 0%,
+        #14B8A6 50%,
+        #fff 50%,
+        #fff 100%
+    );
+    padding: 100px 25px 120px;
+    text-align: center;
+}
+
+.projects-heading {
+    max-width: 750px;
+    margin: 0 auto 65px;
+}
+
+.projects-heading h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.projects-heading p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.projects-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background: #fff;
+    padding: 45px 30px;
+
+    border-radius: 12px;
+    border: 1px solid #E2E8F0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-height: 390px;
+
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.14);
+}
+
+.project-icon {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(45, 212, 191, 0.12);
+    color: var(--primary-dark);
+
+    border-radius: 16px;
+
+    font-size: 2rem;
+    margin-bottom: 28px;
+}
+
+.project-card h3 {
+    font-size: 1.3rem;
+    font-weight: 750;
+    color: var(--text);
+
+    margin-bottom: 18px;
+}
+
+.project-card p {
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.8;
+
+    margin-bottom: 28px;
+}
+
+.project-card a {
+    margin-top: auto;
+
+    color: var(--primary-dark);
+    font-weight: 700;
+
+    text-decoration: none;
+    transition: color .25s ease;
+}
+
+.project-card a:hover {
+    color: var(--text);
+}
+
+/* Responsive layout */
+
+@media (max-width: 992px) {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .featured-projects {
+        padding: 75px 20px;
+    }
+
+    .projects-heading h2 {
+        font-size: 2rem;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        min-height: 350px;
+    }
+}
+/* ==============================
+   LEARNING JOURNEY
+================================= */
+
+.project-card ul {
+    text-align: left;
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 2;
+    padding-left: 22px;
+    margin: 0;
+    width: 100%;
+}
+
+.project-card li {
+    padding-left: 5px;
+}
